@@ -53,7 +53,7 @@ const CONFIG_BODA = {
   
   // ✅ NUEVA SECCIÓN DE RECOMENDACIONES
   recomendaciones: {
-    titulo: "📋 Recomendaciones",
+    titulo: "Recomendaciones",
     items: [
       " **Celular en modo vibración:** Te pedimos usar tu celular en modo vibración para no interrumpir la ceremonia.",
       " **Puntualidad:** Te invitamos a llegar a las 3:30 pm para tener tiempo de acomodación en orden antes de la ceremonia en la capilla.",
@@ -101,21 +101,6 @@ const CONFIG_BODA = {
     baile: "./assets/bailenovios.png",
     musica: "./assets/baile.png"
   },
-
-// Ejemplo de cómo personalizar las recomendaciones:
-  recomendaciones: {
-    titulo: " Recomendaciones Importantes ",
-    colorFondo: "#9195A0",     // Fondo crema
-    colorBorde: "#202643",     // Borde dorado
-    iconoGeneral: "-",
-    items: [
-    "**Solo adultos:** Si bien amamos a los niños; celebraremos un evento solo para adultos y para mantener un ambiente tranquilo y cómodo durante la ceremonia y recepción te agradecemos no traer niños, les agradecemos su comprensión.",
-    "**Celular en modo vibración:** Usar celular en modo vibración para no interrumpir la ceremonia.",
-    "**Diez minutos Antes:** Llegar 10 min antes a la ceremonia y al salon.",
-
-    // ... más items
-  ]
-},
 
 // Agrega esto a tu CONFIG_BODA
 confirmacionMensaje: {
