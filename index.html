@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Tomas & Alejandra · Boda 2026</title>
+  <!-- ============================================ -->
+<!-- PREVISUALIZACIÓN PARA WHATSAPP               -->
+<!-- ============================================ -->
+
+<meta property="og:title" content="✨Tomas y Alejandra ✨" />
+<meta property="og:description" content="queremos compartir este momento especial contigo. Abre la invitacion que tenemos para ti" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://github.com/angeldesarr/Tomas-Alejandra.git/sobrecomple.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Montserrat:wght@300;400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <audio id="weddingAudioCinema" loop preload="auto"></audio>
+
+  <!-- ========================================================================
+       MAIN · TODAS LAS SECCIONES (incluyendo el sobre como primera sección)
+  ======================================================================== -->
+  <main class="cinema-scenes" id="cinemaScenes">
+
+<!-- SECCIÓN 0 — SOBRE E IMG -->
+<section class="scene scene-envelope" id="sceneEnvelope">
+  
+  <div class="envelope-cinema">
+    <div class="envelope-scene">
+      
+      <!-- IMAGEN DEBAJO DEL SELLO -->
+      <div class="imagen-debajo-sello" id="imagenDebajoSello">
+        <img id="imagenPersonalizada" alt="decoracion">
+      </div>
+      
+      <div class="letter-cinema" id="letterCinema">
+        <div class="letter-cinema-content">
+          <div class="polaroid-frame">
+            <img id="fotoNoviosPortadaCinema" alt="Tomas y Alejandra">
+          </div>
+        </div>
+      </div>
+      
+      <div class="envelope-backface">
+        <img id="sobreBackImg" alt="base sobre" class="envelope-texture">
+      </div>
+
+      <div class="envelope-flap-cinema" id="flapCinema">
+        <img id="sobreFlapImg" alt="solapa">
+      </div>
+      
+      <button class="seal-cinema" id="openCinemaBtn">
+        <img id="selloDoradoImg" alt="Sello Dorado">
+        <span>Abrir</span>
+      </button>
+      
+    </div>
+  </div> 
+    
+  <img id="florEsquinaSI" class="flor-esquina flor-si" alt="">
+  <img id="florEsquinaSD" class="flor-esquina flor-sd" alt="">
+  
+</section>
+
+<!-- SECCIÓN 1 — MENSAJE EMOTIVO DE LOS NOVIOS -->
+<section class="scene scene-hero" id="sceneHero">
+  <div class="hero-bg-layer"></div>
+  
+  <img id="florTopLeft" class="floating-flower flower-blur" alt="">
+  <img id="florBottomRight" class="floating-flower flower-blur reverse" alt="">
+  
+  <div class="hero-cinema-container">
+    <div class="hero-text-block">
+      <p class="hero-pre-title reveal-stagger" id="heroMensajePreTitulo">Con mucha emoción</p>
+      <h1 class="hero-names-cinema reveal-stagger" id="heroNombresNovios"></h1>
+      <p class="hero-verse-cinema reveal-stagger" id="heroMensajeEmotivo"></p>
+      <div class="hero-frase-revelacion reveal-stagger" id="heroFraseRevelacion">✨ Los esperamos para celebrar juntos este sueño ✨</div>
+    </div>
+    <div class="hero-text-block">
+  <p class="hero-pre-title reveal-stagger" id="heroMensajePreTitulo">Con mucha emoción</p>
+  <h1 class="hero-names-cinema reveal-stagger" id="heroNombresNovios"></h1>
+  
+  <!-- ✅ CONTENEDOR PARA LA FOTO DE LOS NOVIOS (AGREGA ESTO) -->
+  <div class="hero-foto-container reveal-stagger">
+    <img id="heroFotoNovios" class="hero-foto-novios" alt="Tomas y Alejandra">
+  </div>
+  
+  <p class="hero-verse-cinema reveal-stagger" id="heroMensajeEmotivo"></p>
+  <div class="hero-frase-revelacion reveal-stagger" id="heroFraseRevelacion">✨Bienvenido a la noche más importante de nuestras vidas ✨</div>
+</div>
+  </div>
+  
+  <div class="scroll-hint">⌄</div>
+</section>
+
+<!-- SECCIÓN 2 — GALERÍA -->
+<section class="scene-gallery">
+
+   <div class="gallery-cinema-wrapper">
+
+      <div class="photo-frame-cinema">
+
+         <img 
+            id="fotoGaleriaCinema"
+            class="zoom-slow-photo"
+            src=""
+            alt="Galería principal">
+
+      </div>
+
+   </div>
+
+</section>
+
+<!-- SECCIÓN 3 — FECHA + CONTADOR CON HOJAS QUE CAEN -->
+<section class="scene scene-countdown">
+
+<div class="calendar-elegant" id="calendarContainer"></div>
+
+<button class="btnagregar" id="googleCalendarBtn">
+Agenda al Calendario
+</button>
+
+  <!-- CONTADOR CON HOJAS QUE CAEN -->
+  <div class="contador-hojas-wrapper">
+    <div class="contador-hojas-caja">
+      <div class="flip-card-hoja" id="flip-dias-hoja">
+        <div class="flip-number-hoja" id="daysCountTear">00</div>
+        <div class="hoja-cayendo" id="hoja-dias"></div>
+        <small>DÍAS</small>
+      </div>
+      <div class="flip-card-hoja" id="flip-horas-hoja">
+        <div class="flip-number-hoja" id="hoursCountTear">00</div>
+        <div class="hoja-cayendo" id="hoja-horas"></div>
+        <small>HORAS</small>
+      </div>
+      <div class="flip-card-hoja" id="flip-minutos-hoja">
+        <div class="flip-number-hoja" id="minutesCountTear">00</div>
+        <div class="hoja-cayendo" id="hoja-minutos"></div>
+        <small>MINUTOS</small>
+      </div>
+      <div class="flip-card-hoja" id="flip-segundos-hoja">
+        <div class="flip-number-hoja" id="secondsCountTear">00</div>
+        <div class="hoja-cayendo" id="hoja-segundos"></div>
+        <small>SEGUNDOS</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+   <!-- SECCIÓN 4 — ITINERARIO -->
+<section class="scene scene-timeline">
+
+<h2 class="scene-title itinerary-title">Itinerario</h2>
+
+  <div id="timelineCinema" class="timeline-cinema">
+    <!-- Aquí JS inserta automáticamente los eventos -->
+  </div>
+
+</section>
+    <!-- SECCIÓN 5 — UBICACIONES -->
+    <section class="scene scene-locations">
+      <h2 class="scene-title">Ubicaciones</h2>
+      <div class="locations-duo">
+        <div class="location-glass">
+          <h3>Ceremonia</h3>
+          <p class="loc-hour" id="ceremoniaHour"></p>
+          <h4 id="ceremoniaName"></h4>
+          <p class="loc-address" id="ceremoniaAddress"></p>
+                <div class="location-image-wrapper">
+        <img class="location-img" id="ceremoniaImagen" src="" alt="Iglesia">
+      </div>
+          <a id="ceremoniaMapLink" class="map-link-glass" target="_blank">Ver mapa ⟶</a>
+        </div>
+        <div class="location-glass">
+          <h3>Recepción</h3>
+          <p class="loc-hour" id="recepcionHour"></p>
+          <h4 id="recepcionName"></h4>
+          <p class="loc-address" id="recepcionAddress"></p>
+                <div class="location-image-wrapper">
+        <img class="location-img" id="recepcionImagen" src="" alt="Salón">
+      </div>
+          <a id="recepcionMapLink" class="map-link-glass" target="_blank">Ver mapa ⟶</a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- SECCIÓN RECOMENDACIONES -->
+<section class="seccion-recomendaciones" id="seccionRecomendaciones">
+  <div class="recomendaciones-container">
+    <h3 class="recomendaciones-titulo">
+      <span>📋</span> Recomendaciones <span>💒</span>
+    </h3>
+    <div class="recomendaciones-lista" id="recomendacionesLista">
+      <!-- Aquí se cargarán dinámicamente las recomendaciones -->
+    </div>
+  </div>
+</section>
+
+<!-- SECCIÓN 6 — fotos RASGADOS ARRIBA/ABAJO -->
+<section class="scene scene-gifts">
+  <div class="gift-layered">
+    <!-- Imagen de fondo (completa, sin rasgar) -->
+    <img id="giftBackgroundImg" class="gift-background" src="" alt="Fondo">
+    
+    <!-- Borde superior rasgado -->
+    <div class="gift-tear-top">
+      <img id="giftTearTopImg" src="" alt="Borde rasgado superior">
+    </div>
+    
+    <!-- Borde inferior rasgado -->
+    <div class="gift-tear-bottom">
+      <img id="giftTearBottomImg" src="" alt="Borde rasgado inferior">
+    </div>
+  </div>
+</section>
+
+<!-- SECCIÓN 7 — CIERRE CON PAPEL ENCIMA DEL SOBRE -->
+<section class="scene scene-closing">
+  <div class="closing-glass">
+    
+    <!-- Contenedor del sobre con papel encima -->
+    <div class="sobre-container">
+      <img id="fotoCierreCinema" class="closing-photo-slow" alt="Novios atardecer">
+      
+      <!-- PAPEL FLOTANTE ENCIMA DEL SOBRE -->
+      <div class="papel-flotante">
+        <h3 class="papel-titulo">✧ Confirmar asistencia ✧</h3>
+        <p class="papel-mensaje" id="papelMensaje"></p>
+        
+        <form id="formConfirmacion" class="form-confirmacion">
+          <input type="text" id="nombreInvitado" class="input-nombre" placeholder="Nombre y apellido" required>
+          
+          <div class="radio-group">
+            <label class="radio-option">
+              <input type="radio" name="asistencia" value="si" required>
+              <span>✨ Sí, asistiré con mucho gusto</span>
+            </label>
+            <label class="radio-option">
+              <input type="radio" name="asistencia" value="no">
+              <span>💔 No podré asistir</span>
+            </label>
+          </div>
+          
+          <div class="error-mensaje" id="errorMsg">Por favor completa todos los campos</div>
+          
+          <button type="submit" class="btn-enviar-papel">Enviar confirmación ✦</button>
+        </form>
+      </div>
+    </div>
+    
+  
+    <a class="confirm-whatsapp-btn" id="confirmWhatsappBtn" target="_blank">Confirmar asistencia ✦</a>
+    
+  </div>
+</section>
+
+  </main>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+
+</body>
+</html>
