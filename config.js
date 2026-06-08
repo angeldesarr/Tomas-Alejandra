@@ -55,10 +55,9 @@ const CONFIG_BODA = {
   recomendaciones: {
     titulo: "📋 Recomendaciones",
     items: [
-      " **Solo adultos:** Si bien amamos a los niños, celebraremos un evento solo para adultos. Para mantener un ambiente tranquilo y cómodo durante la ceremonia y recepción, te agradecemos no traer niños. Les agradecemos su comprensión.",
       " **Celular en modo vibración:** Te pedimos usar tu celular en modo vibración para no interrumpir la ceremonia.",
       " **Puntualidad:** Te invitamos a llegar a las 3:30 pm para tener tiempo de acomodación en orden antes de la ceremonia en la capilla.",
-      " **Estacionamiento:** Dentro de la hacienda hay un amplio espacio de estacionamiento para vehículos donde puedes dejar tu carro. Contamos con vigilancia las 24 horas."
+      " **Estacionamiento:** Dentro del salon hay un espacio de estacionamiento para vehículos donde puedes dejar tu carro."
     ],
     colorFondo: "#f9f7f4",      // Color de fondo 
     colorBorde: "#202643",      // Color del borde
