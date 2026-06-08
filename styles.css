@@ -54,7 +54,10 @@ body {
 }
 
 /* ============================================================
-   SOBRE
+   SOBRE - VERSIÓN ORIGINAL (LAPTOP/DESKTOP)
+============================================================ */
+/* ============================================================
+   SOBRE - VERSIÓN ORIGINAL (LAPTOP/DESKTOP)
 ============================================================ */
 .scene-envelope {
   background: #fcfaf6;
@@ -102,7 +105,7 @@ body {
   z-index: 1;
 
   border-radius: 8px;
-  padding: .6rem; /* menos padding */
+  padding: .6rem;
 
   box-shadow: 0 10px 25px rgba(0,0,0,.15);
 
@@ -121,13 +124,8 @@ body {
    width:100%;
    height:100%;
    object-fit:cover;
-   object-position:center 75%; /* aquí ajustas la cara */
+   object-position:center 75%;
    display:block;
-}
-@media (max-width:680px){
-  .letter-cinema img{
-     object-position:center 65%; /* baja más la cara en móvil */
-  }
 }
 
 .envelope-scene.open-flap .letter-cinema {
@@ -222,6 +220,78 @@ body {
 .scene-envelope.open .imagen-debajo-sello {
   opacity: 1;
   bottom: -300px;
+}
+
+/* ============================================================
+   AJUSTES PARA CELULAR (427px - 680px) - ESCALA PROPORCIONAL
+============================================================ */
+@media (min-width: 427px) and (max-width: 680px) {
+  
+  /* Escalar todo el sobre proporcionalmente */
+  .envelope-cinema {
+    transform: scale(0.9) !important;
+    transform-origin: center center !important;
+    margin-top: 60px !important;
+  }
+  
+  /* La solapa mantiene su posición relativa */
+  .envelope-flap-cinema {
+    top: 10px !important;
+  }
+  
+  /* La carta mantiene su posición */
+  .letter-cinema {
+    top: 7% !important;
+  }
+  
+  .letter-cinema img {
+    object-position: center 65% !important;
+  }
+}
+
+/* ============================================================
+   AJUSTES PARA CELULAR PEQUEÑO (menos de 427px)
+============================================================ */
+@media (max-width: 426px) {
+  
+  /* Escalar un poco más */
+  .envelope-cinema {
+    transform: scale(0.85) !important;
+    transform-origin: center center !important;
+    margin-top: 40px !important;
+  }
+  
+  /* Solapa ligeramente ajustada */
+  .envelope-flap-cinema {
+    top: 35px !important;
+  }
+  
+  /* Carta ajustada */
+  .letter-cinema {
+    top: 12% !important;
+  }
+  
+  .letter-cinema img {
+    object-position: center 60% !important;
+  }
+}
+
+/* ============================================================
+   AJUSTES SOLO PARA CELULAR MUY PEQUEÑO (menos de 400px)
+============================================================ */
+@media (max-width: 399px) {
+  .envelope-cinema {
+    transform: scale(0.75) !important;
+    margin-top: 30px !important;
+  }
+  
+  .envelope-flap-cinema {
+    top: 45px !important;
+  }
+  
+  .letter-cinema {
+    top: 15% !important;
+  }
 }
 
 /* ============================================================
